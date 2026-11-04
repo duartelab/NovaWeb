@@ -24,7 +24,8 @@ Não há backend: o login é simulado no navegador (`sessionStorage`/`localStora
 | Etapa | Situação |
 |---|---|
 | Protótipo no Figma (desktop e mobile) | Concluído, PNGs em `docs/prototipo/` |
-| HTML, CSS e JavaScript | Em desenvolvimento |
+| Estrutura de pastas e arquivos | Criada (arquivos ainda vazios) |
+| Login, perfil e consulta (HTML, CSS e JS) | Em desenvolvimento |
 
 ---
 
@@ -99,24 +100,21 @@ Fonte: **Inter** (fallback: fonte do sistema).
 
 ```
 .
-├── README.md
-├── .gitignore
-├── docs/
-│   └── prototipo/                  # PNGs exportados do Figma
-├── imagens/                        # imagens livres usadas no projeto
+├── index.html            # login
+├── perfil.html           # perfil do usuário
+├── consulta.html         # consulta de chamados
 ├── css/
-└── js/
-```
-
-A estrutura do site será criada na fase de código:
-
-```
-├── index.html
-├── perfil.html
-├── consulta.html
-├── css/style.css
-├── js/app.js
-└── assets/images/
+│   ├── style.css         # estilos do projeto
+│   └── vendor/           # Bootstrap 5.3.3 (local)
+├── js/
+│   └── app.js            # login simulado, perfil e pesquisa
+├── assets/
+│   └── img/originais/    # imagens originais antes da otimização
+├── docs/
+│   └── prototipo/        # PNGs exportados do Figma
+├── imagens/              # imagens livres usadas no projeto
+├── README.md
+└── .gitignore
 ```
 
 ---
@@ -131,7 +129,7 @@ A estrutura do site será criada na fase de código:
 
 ---
 
-## 7. Como executar (quando o código existir)
+## 7. Como executar
 
 1. Clone o repositório.
 2. Abra `index.html` no navegador ou rode um servidor local (`python3 -m http.server`).
