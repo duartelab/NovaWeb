@@ -1,168 +1,35 @@
-# NovaWeb Desk — SA02
+# PAUTA — Agenda pessoal Campo Sereno (SA02)
 
-Interface web de um sistema interno de suporte: **login**, **perfil do usuário** e **consulta de chamados** com tabela e pesquisa. Projeto individual da Situação de Aprendizagem 02 (SA02), publicado como repositório público no GitHub.
+Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de alimentos fictícia (Campo Sereno): **login**, **perfil** e **consulta** com tabela e busca que filtra. Projeto individual da Situação de Aprendizagem 02, feito só com HTML, CSS externo e JavaScript.
 
-- **Autora:** Raquel Duarte
-- **Status:** em desenvolvimento (protótipo concluído)
+- **Autora:** Raquel S.R. Duarte
+- **Status:** em desenvolvimento (protótipo pronto; código em andamento)
 
----
+## Telas
+1. **Login** (`index.html`): e-mail, senha, "Lembrar-me" e botão Entrar.
+2. **Perfil** (`perfil.html`): dados da colaboradora, formulário de edição e próximos compromissos.
+3. **Consulta** (`consulta.html`): campo de busca, contador e tabela com 10 compromissos.
 
-## 1. Sobre o projeto
+## Protótipo (Figma)
+Imagens em `docs/prototipo-v2/`: login, perfil e consulta no desktop (1440 × 900) e perfil e consulta no celular (390 × 844).
 
-O NovaWeb Desk é a interface de um sistema de gestão de chamados de TI. O fluxo tem três telas:
+## Como abrir
+Abra `index.html` no navegador. Login de demonstração: `helena.prado@camposereno.com` / `agenda123`.
 
-1. **Login** — entrada com e-mail corporativo e senha.
-2. **Perfil** — dados do usuário autenticado e formulário de edição.
-3. **Consulta** — lista de chamados com pesquisa e filtragem visual.
-
-Não há backend: o login é simulado no navegador (`sessionStorage`/`localStorage`), o que atende ao escopo de front-end da atividade.
-
----
-
-## 2. Status atual
-
-| Etapa | Situação |
-|---|---|
-| Protótipo no Figma (desktop e mobile) | Concluído, PNGs em `docs/prototipo/` |
-| Estrutura de pastas e arquivos | Criada (arquivos ainda vazios) |
-| Login, perfil e consulta (HTML, CSS e JS) | Em desenvolvimento |
-
----
-
-## 3. Protótipo
-
-- **Figma:** link público não aplicável; a evidência do protótipo são os PNGs abaixo.
-- **Prints:** exportados em PNG 2x (desktop `2880 × 1800`, mobile `780 × 1688`).
-
-### Desktop
-
-<p>
-  <img src="docs/prototipo/login-desktop.png" width="420" alt="Login desktop">
-  <img src="docs/prototipo/perfil-desktop.png" width="420" alt="Perfil desktop">
-  <img src="docs/prototipo/consulta-desktop.png" width="420" alt="Consulta desktop">
-</p>
-
-### Mobile
-
-<p>
-  <img src="docs/prototipo/login-mobile.png" width="170" alt="Login mobile">
-  <img src="docs/prototipo/perfil-mobile.png" width="170" alt="Perfil mobile">
-  <img src="docs/prototipo/consulta-mobile.png" width="170" alt="Consulta mobile">
-</p>
-
-Regra do projeto: o site final deve parecer uma continuação direta do protótipo — mesmas cores, fontes, espaçamentos e textos.
-
----
-
-## 4. Identidade visual
-
-### Cores
-
-| Uso | Hex |
-|---|---|
-| Marca / Navy | `#0B1F3A` |
-| Acento / Blue | `#2563EB` |
-| Acento / Cyan | `#06B6D4` |
-| Fundo | `#F1F5F9` |
-| Superfície | `#FFFFFF` |
-| Texto | `#0F172A` |
-| Texto suave | `#64748B` |
-| Borda | `#CBD5E1` |
-| Sucesso | `#15803D` |
-| Alerta | `#B45309` |
-| Perigo | `#B91C1C` |
-| Info | `#0369A1` |
-
-### Tipografia
-
-Fonte: **Inter** (fallback: fonte do sistema).
-
-| Estilo | Tamanho / altura | Peso |
-|---|---|---|
-| Título / 32 | 32 / 40 | Bold |
-| Título / 24 | 24 / 32 | Semi Bold |
-| Corpo / 16 | 16 / 24 | Regular |
-| Corpo forte / 16 | 16 / 24 | Semi Bold |
-| Apoio / 14 | 14 / 20 | Regular |
-| Apoio forte / 14 | 14 / 20 | Medium |
-
-### Medidas
-
-- Desktop: `1440 × 900`. Mobile: `390 × 844`.
-- Conteúdo: largura máxima `1120`, centralizado.
-- Cartões: padding `32`, raio `16`, sombra `0 10 30 rgba(15,23,42,0.08)`.
-- Inputs e botões: altura `48`, raio `8`.
-- Espaço entre campos: `20`.
-
----
-
-## 5. Estrutura do repositório
-
+## Estrutura
 ```
-.
-├── index.html            # login
-├── perfil.html           # perfil do usuário
-├── consulta.html         # consulta de chamados
-├── css/
-│   ├── style.css         # estilos do projeto
-│   └── vendor/           # Bootstrap 5.3.3 (local)
-├── js/
-│   └── app.js            # login simulado, perfil e pesquisa
-├── assets/
-│   └── img/originais/    # imagens originais antes da otimização
-├── docs/
-│   └── prototipo/        # PNGs exportados do Figma
-├── imagens/              # imagens livres usadas no projeto
-├── README.md
-└── .gitignore
+index.html  perfil.html  consulta.html
+css/style.css
+js/app.js
+imagens/        fundos em WebP
+docs/           protótipo e decisões
 ```
 
----
-
-## 6. Stack prevista
-
-- **HTML5** semântico e formulários com labels.
-- **CSS externo** (`css/style.css`) — proibido CSS inline ou `<style>`.
-- **JavaScript puro** para login simulado, edição de perfil e filtragem da tabela.
-- **Bootstrap local** (sem CDN), se necessário para componentes.
-- **GitHub Pages** para publicar a versão estática.
-
----
-
-## 7. Como executar
-
-1. Clone o repositório.
-2. Abra `index.html` no navegador ou rode um servidor local (`python3 -m http.server`).
-3. Entre com a conta de demonstração: `ana.souza@novaweb.com` / `novaweb123`.
-
----
-
-## 8. Decisões do projeto
-
-- Tema NovaWeb Desk: sistema interno de chamados de TI.
-- Stack HTML + CSS externo + JavaScript puro + Bootstrap local.
-- Protótipo com 3 telas desktop e 3 mobile.
-- Login simulado com `sessionStorage`/`localStorage` (sem backend).
-
----
-
-## 9. Imagens e licenças
-
-Imagens livres baixadas para o protótipo (login/avatar). Créditos:
-
-| Arquivo | Autor | Origem | Licença |
+## Imagens
+| Arquivo | Dimensão | Formato | Peso |
 |---|---|---|---|
-| `israel-andrade-YI_9SivVt_s-unsplash.jpg` | Israel Andrade | [Unsplash](https://unsplash.com/photos/YI_9SivVt_s) | [Unsplash License](https://unsplash.com/license) |
-| `hendi-perkasa-asRqoZDUDVw-unsplash.png` | Hendi Perkasa | [Unsplash](https://unsplash.com/photos/asRqoZDUDVw) | [Unsplash License](https://unsplash.com/license) |
-| `kushal-mistri-mSHEr4Kx4vY-unsplash.png` | Kushal Mistri | [Unsplash](https://unsplash.com/photos/mSHEr4Kx4vY) | [Unsplash License](https://unsplash.com/license) |
-| `boxicons-bef6RRQiz4o-unsplash.png` | Boxicons | [Unsplash](https://unsplash.com/photos/bef6RRQiz4o) | [Unsplash License](https://unsplash.com/license) |
+| `imagens/fundo-desktop.webp` | 1920 × 1080 | WebP | 6 KB (PNG original: 52 KB) |
+| `imagens/fundo-celular.webp` | 1080 × 1920 | WebP | 6 KB (PNG original: 59 KB) |
 
-Antes de publicar, converter as imagens usadas para WebP e servir com `srcset`, para atender ao critério de desempenho (nenhuma imagem de 2 MB ou mais na página).
-
----
-
-## 10. Ferramentas
-
-- **Figma** (plano gratuito) para o protótipo.
-- **VS Code** para o código.
-- **Git/GitHub** para versionamento e publicação.
+## Decisões
+Registradas em `docs/decisoes.md`.
