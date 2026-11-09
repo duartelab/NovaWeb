@@ -11,7 +11,7 @@ Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de al
 3. **Consulta** (`consulta.html`): campo de busca, contador e tabela com 10 compromissos.
 
 ## Protótipo (Figma)
-Imagens em `docs/prototipo-v2/`: login, perfil e consulta no desktop (1440 × 900) e perfil e consulta no celular (390 × 844).
+Imagens em `docs/prototipo-v2/`: login, perfil e consulta no desktop (1440 × 900) e no celular (390 × 844).
 
 ## Como abrir
 Abra `index.html` no navegador. Login de demonstração: `helena.prado@camposereno.com` / `agenda123`.
