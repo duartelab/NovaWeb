@@ -7,3 +7,20 @@ email_aluno: raquel.duarte@aluno.cps.sp.gov.br
 turma: WEBI-ISW028-A
 */
 
+body{
+    min-height: 100vh;
+    background-color: #F1B8D4;
+    background-image: url("../imagens/fundo-desktop.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Forma correta para o celular (fica por último no arquivo):
+@media (max-width: 600px) {
+    body {
+        background-image: url("../imagens/fundo-celular.webp");
+    }
+}
+*/
