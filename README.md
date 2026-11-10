@@ -3,12 +3,22 @@
 Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de alimentos fictícia (Campo Sereno): **login**, **perfil** e **consulta** com tabela e busca que filtra. Projeto individual da Situação de Aprendizagem 02, feito só com HTML, CSS externo e JavaScript.
 
 - **Autora:** Raquel S.R. Duarte
-- **Status:** em desenvolvimento (protótipo pronto; código em andamento)
+- **Status:** em desenvolvimento. HTML das 3 páginas pronto (10/11/2026); CSS e JavaScript em andamento.
+
+## Andamento
+| Etapa | Situação |
+|---|---|
+| Fundos em WebP | feito |
+| Estrutura HTML das 3 páginas | feito |
+| CSS base, login, perfil e consulta | a fazer |
+| Responsivo (celular, `@media`) | a fazer |
+| JavaScript (login, sessão, editar perfil, validação) | a fazer |
+| Publicação no GitHub Pages | a fazer |
 
 ## Telas
-1. **Login** (`index.html`): e-mail, senha, "Lembrar-me" e botão Entrar.
-2. **Perfil** (`perfil.html`): dados da colaboradora, formulário de edição e próximos compromissos.
-3. **Consulta** (`consulta.html`): campo de busca, contador e tabela com 10 compromissos.
+1. **Login** (`index.html`): e-mail, senha, "Lembrar-me", botão Entrar, mensagem de erro (escondida até precisar) e bloco de demonstração.
+2. **Perfil** (`perfil.html`): menu, dados da colaboradora, formulário de edição com campos preenchidos e bloqueados (botões Salvar e Cancelar escondidos até clicar em Editar perfil) e próximos compromissos.
+3. **Consulta** (`consulta.html`): menu, campo de busca, contador e tabela com 10 compromissos (Data, Horário, Assunto, Local e Tipo).
 
 ## Protótipo (Figma)
 Imagens em `docs/prototipo-v2/`: login, perfil e consulta no desktop (1440 × 900) e no celular (390 × 844).
