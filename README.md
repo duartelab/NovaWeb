@@ -3,17 +3,20 @@
 Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de alimentos fictícia (Campo Sereno): **login**, **perfil** e **consulta** com tabela e busca que filtra. Projeto individual da Situação de Aprendizagem 02, feito só com HTML, CSS externo e JavaScript.
 
 - **Autora:** Raquel S.R. Duarte
-- **Status:** em desenvolvimento. HTML das 3 páginas pronto (10/11/2026); CSS e JavaScript em andamento.
+- **Status:** em desenvolvimento. HTML das 3 páginas pronto (10/11/2026); CSS do login (fundo e cartão) pronto e CSS de perfil e consulta em andamento (13/11/2026); JavaScript a fazer.
 
 ## Andamento
 | Etapa | Situação |
 |---|---|
-| Fundos em WebP | feito |
-| Estrutura HTML das 3 páginas | feito |
-| CSS base, login, perfil e consulta | a fazer |
-| Responsivo (celular, `@media`) | a fazer |
-| JavaScript (login, sessão, editar perfil, validação) | a fazer |
-| Publicação no GitHub Pages | a fazer |
+| 1. Fundos em WebP | feito |
+| 2. Estrutura HTML das 3 páginas | feito |
+| 3. CSS do login: base, fundo e cartão | feito (13/11) |
+| 4. CSS do login: campos, botão, hover e foco | em andamento |
+| 5. CSS do perfil | em andamento |
+| 6. CSS da consulta (busca, contador e tabela) | em andamento |
+| 7. Responsivo (celular, `@media`) | a fazer |
+| 8 e 9. JavaScript (login, sessão, editar perfil, validação, busca) | a fazer |
+| 10. Publicação no GitHub Pages | a fazer |
 
 ## Telas
 1. **Login** (`index.html`): e-mail, senha, "Lembrar-me", botão Entrar, mensagem de erro (escondida até precisar) e bloco de demonstração.
