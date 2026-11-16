@@ -13,7 +13,6 @@ turma: WEBI-ISW028-A
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>PAUTA | Entrar</title>
-    
 </head>
 <body class="pagina-login">
     <main>
@@ -23,42 +22,31 @@ turma: WEBI-ISW028-A
                 <p>CAMPO SERENO · AGENDA PESSOAL</p>
                 <h1>Acesse sua agenda</h1>
             </header>
-            
-           <form action="#" method="post">
+
+            <form id="form-login" action="#" method="post">
                 <div>
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
-        
-        </div>
-        <div>
-            <label for="password">Senha</label>
-            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
-         
-        </div>
-        <div>
-            <input type="checkbox" id="lembrar">
-            <label for="lembrar">Lembrar-me</label>
-          
-        </div>
-        
-         <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div>
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <div>
+                    <input type="checkbox" id="lembrar">
+                    <label for="lembrar">Lembrar-me</label>
+                </div>
+                <div>
+                    <p id="erro" hidden>Erro - E-mail ou senha incorretos</p>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
 
-            
-            <p id="erro" hidden>Erro - E-mail ou senha incorretos</p>
-         </div>   
-        
-
-        <button type="submit">Entrar</button>
-    </form>
-
-    <p><strong>Demonstração:</strong></p>
-    <p><strong>helena.prado@camposereno.com</strong> / <strong>agenda123</strong></p>
-
+            <p><strong>Demonstração:</strong></p>
+            <p><strong>helena.prado@camposereno.com</strong> / <strong>agenda123</strong></p>
         </section>
-    
     </main>
 
     <script src="./js/app.js"></script>
 </body>
 </html>
-

@@ -13,7 +13,6 @@ turma: WEBI-ISW028-A
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>PAUTA | Perfil</title>
-   
 </head>
 <body>
     <header>
@@ -21,78 +20,73 @@ turma: WEBI-ISW028-A
         <p>Campo Sereno · Agenda pessoal</p>
 
         <nav>
-        <ul>
-            <li><a href="perfil.html" class="ativo">Perfil</a></li>
-            <li><a href="consulta.html">Consulta</a></li>
-            <li><a href="index.html">Sair</a></li>
-        </ul>
+            <ul>
+                <li><a href="perfil.html" class="ativo">Perfil</a></li>
+                <li><a href="consulta.html">Consulta</a></li>
+                <li><a href="index.html" id="sair">Sair</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <h1>Meu perfil</h1>
         <p>Sua rotina na Campo Sereno</p>
         <section class="cartao">
-             <div class="identificacao">
+            <div class="identificacao">
                 <div class="avatar">HP</div>
                 <div class="nome-cargo">
                     <h2>Helena Prado</h2>
                     <p>Analista de Qualidade</p>
                 </div>
                 <div class="setor">
-                    <p>Setor: Qualidade </p>
+                    <p>Setor: Qualidade</p>
                     <a href="mailto:helena.prado@camposereno.com">helena.prado@camposereno.com</a>
-                    <p>Telefone: (11) 98845-2030</p>
+                    <p>(11) 98845-2030</p>
                 </div>
-             </div>       
-                
-        <hr>
-              <div class="duas-colunas">
-              <div class="coluna-esquerda">
-                <h2>Editar meus dados</h2>
-                <button type="button">Editar perfil</button>
-                <form>
-                        <div class="form-nome">
-                            <label for="nome">Nome</label><input type="text" id="nome" name="nome" value="Helena Prado" readonly>
-                        </div>
+            </div>
 
+            <hr>
+
+            <div class="duas-colunas">
+                <div class="coluna-esquerda">
+                    <h2>Editar meus dados</h2>
+                    <button type="button" id="editar">Editar perfil</button>
+                    <form id="form-perfil">
+                        <div class="form-nome">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" value="Helena Prado" readonly>
+                        </div>
                         <div class="form-telefone">
                             <label for="telefone">Telefone</label>
                             <input type="text" id="telefone" name="telefone" value="(11) 98845-2030" readonly>
                         </div>
-
                         <div class="form-setor">
                             <label for="setor">Setor</label>
                             <input type="text" id="setor" name="setor" value="Qualidade" readonly>
                         </div>
-
                         <div class="form-senha">
                             <label for="senha">Nova senha</label>
-                            <input type="password" id="senha" name="senha" placeholder="Digite sua nova senha" readonly>
+                            <input type="password" id="senha" name="senha" placeholder="Digite uma nova senha" readonly>
                         </div>
 
                         <p id="erro" hidden>Erro</p>
-                        <button type="submit" hidden>Salvar</button>
-                        <button type="button" class="secundario" hidden>Cancelar</button>
-                        
-                </form>
-            </div>
+                        <button type="submit" id="salvar" hidden>Salvar</button>
+                        <button type="button" class="secundario" id="cancelar" hidden>Cancelar</button>
+                    </form>
+                </div>
 
-            <div class="coluna-direita">
-                <h2>Próximos compromissos</h2>
-                    
+                <div class="coluna-direita">
+                    <h2>Próximos compromissos</h2>
                     <ul>
                         <li><strong>10/11 · 14:00</strong>Auditoria interna</li>
                         <li><strong>11/11 · 09:30</strong>Treinamento de boas práticas</li>
-                        <li><strong>12/11 · 10:00</strong>Recebimento do fornecedor</li>
+                        <li><strong>12/11 · 10:00</strong>Recebimento com fornecedor</li>
                     </ul>
                     <a href="consulta.html">Ver todos</a>
+                </div>
             </div>
-            </div>
-        </section>   
-            
-    
-
+        </section>
     </main>
+
     <script src="./js/app.js"></script>
 </body>
 </html>

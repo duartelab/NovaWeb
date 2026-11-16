@@ -3,7 +3,7 @@
 Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de alimentos fictícia (Campo Sereno): **login**, **perfil** e **consulta** com tabela e busca que filtra. Projeto individual da Situação de Aprendizagem 02, feito só com HTML, CSS externo e JavaScript.
 
 - **Autora:** Raquel S.R. Duarte
-- **Status:** em desenvolvimento. HTML das 3 páginas pronto (10/11/2026); CSS do login (fundo e cartão) pronto e CSS de perfil e consulta em andamento (13/11/2026); JavaScript a fazer.
+- **Status:** em desenvolvimento. HTML das 3 páginas e CSS completo (login, perfil, consulta e celular) prontos em 15/11/2026; falta o JavaScript e a publicação.
 
 ## Andamento
 | Etapa | Situação |
@@ -11,11 +11,11 @@ Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de al
 | 1. Fundos em WebP | feito |
 | 2. Estrutura HTML das 3 páginas | feito |
 | 3. CSS do login: base, fundo e cartão | feito (13/11) |
-| 4. CSS do login: campos, botão, hover e foco | em andamento |
-| 5. CSS do perfil | em andamento |
-| 6. CSS da consulta (busca, contador e tabela) | em andamento |
-| 7. Responsivo (celular, `@media`) | a fazer |
-| 8 e 9. JavaScript (login, sessão, editar perfil, validação, busca) | a fazer |
+| 4. CSS do login: campos, botão, hover e foco | feito (14/11) |
+| 5. CSS do perfil | feito (15/11) |
+| 6. CSS da consulta (busca, contador e tabela) | feito (15/11) |
+| 7. Responsivo (celular, `@media`) | feito (15/11); conferir no modo celular do navegador (390 px e 768 px) |
+| 8 e 9. JavaScript (login, proteção das páginas, Sair e busca que filtra a tabela) | a fazer |
 | 10. Publicação no GitHub Pages | a fazer |
 
 ## Telas
