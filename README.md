@@ -1,9 +1,9 @@
 # PAUTA — Agenda pessoal Campo Sereno (SA02)
 
-Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de alimentos fictícia (Campo Sereno): **login**, **perfil** e **consulta** com tabela e busca que filtra. Projeto individual da Situação de Aprendizagem 02, feito só com HTML, CSS externo e JavaScript.
+Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de alimentos fictícia (Campo Sereno): **login**, **perfil** e **consulta** com tabela e campo de busca. Projeto individual da Situação de Aprendizagem 02, feito só com HTML, CSS externo e JavaScript.
 
 - **Autora:** Raquel S.R. Duarte
-- **Status:** em desenvolvimento. HTML das 3 páginas e CSS completo (login, perfil, consulta e celular) prontos em 15/11/2026; falta o JavaScript e a publicação.
+- **Status:** concluído. HTML, CSS (incluindo o celular) e JavaScript prontos.
 
 ## Andamento
 | Etapa | Situação |
@@ -14,9 +14,9 @@ Front-end de uma agenda de compromissos de uma colaboradora de uma empresa de al
 | 4. CSS do login: campos, botão, hover e foco | feito (14/11) |
 | 5. CSS do perfil | feito (15/11) |
 | 6. CSS da consulta (busca, contador e tabela) | feito (15/11) |
-| 7. Responsivo (celular, `@media`) | feito (15/11); conferir no modo celular do navegador (390 px e 768 px) |
-| 8 e 9. JavaScript (login, proteção das páginas, Sair e busca que filtra a tabela) | a fazer |
-| 10. Publicação no GitHub Pages | a fazer |
+| 7. Responsivo (celular, `@media`) | feito (15/11) |
+| 8 e 9. JavaScript (login, proteção das páginas, Sair e edição do perfil com validação) | feito (17/11) |
+| 10. Publicação no GitHub Pages | feito (17/11) |
 
 ## Telas
 1. **Login** (`index.html`): e-mail, senha, "Lembrar-me", botão Entrar, mensagem de erro (escondida até precisar) e bloco de demonstração.

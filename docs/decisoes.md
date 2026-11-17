@@ -25,3 +25,13 @@ Uma entrada por sessão: problema, o que tentei, o que resolveu e por quê.
 - **O que aprendi:** o `body` do CSS é um seletor que aponta para o `<body>` do HTML, não um comando; e a ordem das regras e o fechamento das chaves mudam onde cada regra vale.
 - **Conferência:** modo celular do navegador (F12) em 390 px, sem rolagem lateral na página.
 
+
+## 17/11/2026 — JavaScript: login, proteção, Sair e perfil
+- **O que fiz:** um único `js/app.js` para as três páginas. Cada bloco só roda se o elemento existir na página (`if (formLogin)`, `if (botaoSair)`, `if (botaoEditar)`), então o mesmo arquivo atende login, perfil e consulta sem dar erro.
+- **Login:** comparo o e-mail (sem espaços e em minúsculas) e a senha com os dados de demonstração. Se estiver certo, guardo `logado = sim` no `sessionStorage` e vou para o perfil; se estiver errado, mostro a mensagem que estava escondida (`hidden`).
+- **Por que `sessionStorage`:** é só uma simulação de front-end, sem servidor. A sessão acaba quando fecho a aba, o que combina com um login de demonstração.
+- **Proteção e Sair:** perfil e consulta conferem o `sessionStorage` ao abrir e, sem login, mandam de volta para `index.html`. O link Sair apaga a marca e já segue para o login.
+- **Perfil:** os campos começam bloqueados (`readonly`). Editar perfil libera os campos, guarda os valores originais e troca o botão Editar por Salvar e Cancelar. Cancelar devolve os valores guardados.
+- **Validação do Salvar:** quatro regras, uma de cada vez, parando na primeira que falha e deixando os campos livres: nome com pelo menos 3 letras, telefone com pelo menos 10 dígitos, setor preenchido e nova senha vazia ou com pelo menos 6 caracteres. Passando, aparece "Dados salvos" e os campos bloqueiam de novo. Nenhum dado é gravado de verdade, como o enunciado permite.
+- **Busca da consulta:** o campo existe e segue o Figma, mas não filtra a tabela. Decidi não filtrar porque a orientação era só mostrar o campo, e assim o contador continua em 10 compromissos.
+- **Conferência:** testar no navegador login certo e errado, abrir `perfil.html` sem login, Sair, e Editar, Cancelar e Salvar com cada regra falhando.
