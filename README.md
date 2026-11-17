@@ -39,7 +39,10 @@ Imagens em `docs/prototipo-v2/`: login, perfil e consulta no desktop (1440 × 90
 | <img src="docs/prototipo-v2/login-mobile.png" alt="Login no celular" width="220"> | <img src="docs/prototipo-v2/perfil-mobile.png" alt="Perfil no celular" width="220"> | <img src="docs/prototipo-v2/consulta-mobile.png" alt="Consulta no celular" width="220"> |
 
 ## Como abrir
-Abra `index.html` no navegador. Login de demonstração: `helena.prado@camposereno.com` / `agenda123`.
+Online: https://duartelab.github.io/NovaWeb/
+
+Local: 
+abra `index.html` no navegador. Login de demonstração: `helena.prado@camposereno.com` / `agenda123`.
 
 ## Estrutura
 ```
