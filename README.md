@@ -41,8 +41,7 @@ Imagens em `docs/prototipo-v2/`: login, perfil e consulta no desktop (1440 × 90
 ## Como abrir
 Online: https://duartelab.github.io/NovaWeb/
 
-Local: 
-abra `index.html` no navegador. Login de demonstração: `helena.prado@camposereno.com` / `agenda123`.
+Local: abra `index.html` no navegador. Login de demonstração: `helena.prado@camposereno.com` / `agenda123`.
 
 ## Estrutura
 ```
